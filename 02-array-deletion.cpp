@@ -18,3 +18,22 @@ int main(){
         cout<<array[i]<<" ";
     }
 }
+
+
+
+#include<iostream>
+using namespace std;
+int main(){
+    int arr[10] = {1,2,3,4,5,6,7,8,9,10};
+    int size = 10;
+    int key;
+    cin>>key;
+    for(int i=key;i<size;i++){
+        arr[i-1] = arr[i];
+    }
+    size--;
+    for(int i=0;i<size;i++){
+        cout<<arr[i]<<" ";
+    }
+}
+
