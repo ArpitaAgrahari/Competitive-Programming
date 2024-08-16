@@ -14,7 +14,7 @@ int main(){             //time ccomplexity is O(n)
 //sum using formual
 #include<iostream>
 using namespace std;
-int main(){
+int main(){         //time ccomplexity is O(1)
     int n ;
     cin>>n;
     int sum = n*(n+1)/2;
