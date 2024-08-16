@@ -1,7 +1,7 @@
 //sum of n natural numbers using for loop
 #include<iostream>
 using namespace std;
-int main(){
+int main(){             //time ccomplexity is O(n)
     int n;
     cin>>n;
     int sum = 0;
