@@ -21,4 +21,4 @@ int main(){         //time ccomplexity is O(1)
     cout<<sum;
 }
 
-//best approach is using formula
+//best approach is using formula because it is constant time complexity
