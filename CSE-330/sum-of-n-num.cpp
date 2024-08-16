@@ -20,3 +20,5 @@ int main(){         //time ccomplexity is O(1)
     int sum = n*(n+1)/2;
     cout<<sum;
 }
+
+//best approach is using formula
