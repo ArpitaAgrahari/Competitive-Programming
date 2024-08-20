@@ -40,23 +40,23 @@
 
 
 //finding peak using binary search
-#include<iostream>
-using namespace std;
+// #include<iostream>
+// using namespace std;
 
-int main() {
-    int arr[] = {12, 10, 5, 7, 6, 2};
-    int n = 6;
-    int s = 0, e = n - 1;
+// int main() {
+//     int arr[] = {12, 10, 5, 7, 6, 2};
+//     int n = 6;
+//     int s = 0, e = n - 1;
 
-    while (s <= e) {
-        int mid = s + (e - s) / 2;
-        if (mid > 0 && arr[mid] < arr[mid - 1]) {
-            e = mid - 1;
-        } else {
-            s = mid + 1;
-        }
-    }
+//     while (s <= e) {
+//         int mid = s + (e - s) / 2;
+//         if (mid > 0 && arr[mid] < arr[mid - 1]) {
+//             e = mid - 1;
+//         } else {
+//             s = mid + 1;
+//         }
+//     }
 
-    cout << "The index of the smallest element is: " << s << endl;
-    return 0;
+//     cout << "The index of the smallest element is: " << s << endl;
+//     return 0;
 }
