@@ -15,7 +15,7 @@
 #include<iostream>
 using namespace std;
 
-void input(int arr[],int r,int c){
+void input(int arr,int r,int c){
     for(int i=0;i<r;i++){
         for(int j=0;j<c;j++){
             cin>>arr[i][j];
@@ -43,4 +43,11 @@ int main(){
             }
         }
     }
+    for(int i=0;i<r1;i++){
+    for(int j=0;j<c2;j++){
+        cout<<arr3[i][j]<<" ";
+    }
+    cout<<endl;
 }
+}
+
