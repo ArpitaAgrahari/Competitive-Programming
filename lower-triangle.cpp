@@ -60,3 +60,5 @@
 //     cout << "The index of the smallest element is: " << s << endl;
 //     return 0;
 // }
+
+
