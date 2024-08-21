@@ -67,3 +67,5 @@ int main(){
     }
     return 0;
 }
+
+//this is most efficent to check the prime or not
