@@ -1,20 +1,23 @@
 
 //naive approach to check prime or not 
-#include<iostream>
+
+#include <iostream>
 using namespace std;
-int main(){
+
+int main() {
     int n;
     cin>>n;
     bool flag = 0;
     for(int i=2;i<n;i++){
         if(n%i==0){
-            cout<<"Non prime";
+            cout<<"Non-prime";
             flag = 1;
             break;
         }
-    }
-    if(flag==0){
-        cout<<"Prime";
-
-    }
+        }if(flag==0){
+            cout<<"Prime";
+        }
+    return 0;
 }
+
+//efficent approach to check prime using square root of n
