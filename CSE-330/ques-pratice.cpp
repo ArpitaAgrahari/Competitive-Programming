@@ -12,7 +12,7 @@ int main(){
     cout<<"Enter the elements of the matrix: ";
     for(int i=0;i<n;i++){
         for(int j=0;j<n;j++){
-            cin>>matrix[i][j];
+        cin>>matrix[i][j];
         }
     }
     int row[n]={0};
