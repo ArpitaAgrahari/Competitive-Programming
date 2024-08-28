@@ -11,7 +11,6 @@ int main(){
             int* minElementPtr = min_element(arr, arr + n);
              *minElementPtr *= mul;
         }
-
     for(int i=0;i<n;i++){
         cout<<arr[i]<<" ";
     }
