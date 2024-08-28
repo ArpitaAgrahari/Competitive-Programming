@@ -11,10 +11,10 @@ int main(){
     }
     int a = ceil(sqrt(n));
     int b2 = a*a - n;
-        while (static_cast<int>(sqrt(b2)) * static_cast<int>(sqrt(b2)) != b2) {
+    while (static_cast<int>(sqrt(b2)) * static_cast<int>(sqrt(b2)) != b2) {
             a++;
             b2 = a * a - n;
-}
+        }
 
     int b = sqrt(b2);
     int factor1 = a+b;
