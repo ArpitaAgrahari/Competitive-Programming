@@ -22,3 +22,4 @@ int main(){
     cout<<factor1<<" "<<factor2;
     return 0;
 }
+
