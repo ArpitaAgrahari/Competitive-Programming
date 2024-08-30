@@ -2,6 +2,7 @@
 
 //seive of eratothenes is an algorithm to find all prime numbers upto a given number n
 //most efficient way to find all prime numbers upto n
+//it works by iteratively marking the multiples of primes as composite, starting from 2
 #include<iostream>
 using namespace std;
 int main(){
