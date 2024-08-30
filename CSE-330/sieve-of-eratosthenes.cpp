@@ -23,5 +23,6 @@ int main(){
         if(prime[i]){
             cout<<i<<" ";
         }
-    }return 0;   
+    }
+    return 0;   
 }
