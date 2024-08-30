@@ -1,4 +1,7 @@
 //seive of eratosthenes
+
+//seive of eratothenes is an algorithm to find all prime numbers upto a given number n
+//most efficient way to find all prime numbers upto n
 #include<iostream>
 using namespace std;
 int main(){
@@ -20,6 +23,5 @@ int main(){
             cout<<i<<" ";
         }
     }
-    return 0;
-    
+    return 0;   
 }
