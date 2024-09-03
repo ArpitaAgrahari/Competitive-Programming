@@ -29,4 +29,5 @@ int main(){
     first=insert_at_first(first,40);
     first=insert_at_first(first,50);
     print_Linked_List(first);
+    return 0;
 }
