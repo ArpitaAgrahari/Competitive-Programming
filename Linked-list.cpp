@@ -1,4 +1,5 @@
 //Singly Linked List
+//insertion
 #include<iostream>
 using namespace std;
 
@@ -29,6 +30,9 @@ void print_reverse_linked_list(struct node* first){
 //         first=first->next;
 //     }
 // }
+
+
+
 struct node* insert_at_first(struct node* first,int key){
     struct node* temp=new node;
     temp->data=key;
@@ -38,6 +42,8 @@ struct node* insert_at_first(struct node* first,int key){
     temp->next=first;
     return temp;
 }
+
+
 
 int main(){
     node* first=NULL;
@@ -50,3 +56,4 @@ int main(){
     print_reverse_linked_list(first);
     return 0;
 }
+
