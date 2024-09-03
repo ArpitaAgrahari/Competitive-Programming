@@ -20,6 +20,7 @@ struct node* insert_at_first(struct node* first,int key){
     temp->next=first;
     return temp;
 }
+
 int main(){
     node* first=NULL;
     first=insert_at_first(first,10);
