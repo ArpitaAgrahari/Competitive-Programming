@@ -46,6 +46,7 @@ int main(){
     first=insert_at_first(first,30);
     first=insert_at_first(first,40);
     first=insert_at_first(first,50);
-    print_Linked_List(first);
+    // print_Linked_List(first);
+    print_reverse_linked_list(first);
     return 0;
 }
