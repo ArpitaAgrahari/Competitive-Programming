@@ -37,6 +37,7 @@ int main(){
     first=insert_at_first(first,30);
     first=insert_at_first(first,40);
     first=insert_at_first(first,50);
+    first=insert_at_first(first, 60);
     first=delete_at_first(first);
     print_linked_list(first);
     return 0;
