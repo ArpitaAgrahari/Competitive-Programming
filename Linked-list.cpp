@@ -6,12 +6,29 @@ struct node{
     int data;
     struct node *next;
 };
-void print_Linked_List(struct node* first){
-    while(first!=NULL){
-        cout<<first->data<<" ";
-        first=first->next;
-    }
+//print this linked list in reverse order
+void print_reverse_linked_list(struct node* first){
+    if(first==NULL)
+    return;
+    print_reverse_linked_list(first->next);
+    cout<<first->data<<" ";
 }
+
+//print this linked list in reverse order
+void print_reverse_linked_list(struct node* first){
+    if(first==NULL)
+    return;
+    print_reverse_linked_list(first->next);
+    cout<<first->data<<" ";
+}
+
+
+// void print_Linked_List(struct node* first){
+//     while(first!=NULL){
+//         cout<<first->data<<" ";
+//         first=first->next;
+//     }
+// }
 struct node* insert_at_first(struct node* first,int key){
     struct node* temp=new node;
     temp->data=key;
