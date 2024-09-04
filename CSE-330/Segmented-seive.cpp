@@ -1,5 +1,4 @@
 //segemented sieve is used to find prime numbers in a given range
-//Time complexity: O(nloglogn)
 #include <bits/stdc++.h>
 using namespace std;
 
