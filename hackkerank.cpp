@@ -39,29 +39,3 @@ int main(){
     cout<<-1<<endl;
     return 0;
 }
-//wrong answer
-#include <iostream>
-using namespace std;
-int main(){
-    int n;
-    cin>>n;
-    int arr[n];
-    for(int i=0;i<n;i++){
-        cin>>arr[i];
-    }
-    int sum=0;
-    for(int i=0;i<n;i++){
-        sum+=arr[i];
-    }
-    int leftsum=0;
-    for(int i=0;i<n;i++){
-        sum-=arr[i];
-        if(leftsum>sum){
-            cout<<i<<endl;
-            return 0;
-        }
-        leftsum+=arr[i];
-    }
-    cout<<-1<<endl;
-    return 0;
-}
