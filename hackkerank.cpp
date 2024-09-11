@@ -36,6 +36,7 @@ int main(){
         }
         leftsum+=arr[i];
     }
+    
     cout<<-1<<endl;
     return 0;
 }
