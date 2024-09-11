@@ -13,7 +13,7 @@
 // }
 
 
-
+// 
 #include<iostream>
 using namespace std;
 int extendedeuclid(int a,int b,int *x,int *y){
