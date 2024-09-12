@@ -1,3 +1,5 @@
+//Boyer more vt=oting algorihtm is used to find majoriy occurance of element in array 
+//optimized algorithm o(1) coml
 #include<iostream>
 #include<vector>
 #include<algorithm>
