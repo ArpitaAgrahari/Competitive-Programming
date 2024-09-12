@@ -41,3 +41,28 @@
 //     cout<<-1<<endl;
 //     return 0;
 // }
+
+
+
+//reverse the word index of the string with spaces
+#include<iostream>
+using namespace std;
+int main(){
+    string s;
+    cin>>s;
+    int n=s.length();
+    int start=0;
+    for(int i=0;i<n;i++){
+        if(s[i]==' '){
+            for(int j=n-1;j<=start;j--){
+                cout<<s[j];
+
+            }
+            start=i+1;
+            cout<<" ";
+
+        }
+        
+    }
+    return 0;
+}
