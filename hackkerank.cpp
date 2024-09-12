@@ -14,55 +14,32 @@
 
 // 2
 
-// #include <iostream>
-// using namespace std;
-// int main(){
-//     int n;
-//     cin>>n;
-//     int arr[n];
-//     for(int i=0;i<n;i++){
-//         cin>>arr[i];
-//     }
-//     int sum=0;
-//     for(int i=0;i<n;i++){
-//         sum+=arr[i];
-//     }
-//     int leftsum=0;
-//     for(int i=0;i<n;i++){
-//         sum-=arr[i];
-//         if(leftsum>sum){
-//             cout<<i<<endl;
-//             return 0;
-//         }
-        
-//         leftsum+=arr[i];
-//     }
-
-//     cout<<-1<<endl;
-//     return 0;
-// }
-
-
-
-//reverse the word index of the string with spaces
-#include<iostream>
+#include <iostream>
 using namespace std;
 int main(){
-    string s;
-    cin>>s;
-    int n=s.length();
-    int start=0;
+    int n;
+    cin>>n;
+    int arr[n];
     for(int i=0;i<n;i++){
-        if(s[i]==' '){
-            for(int j=n-1;j<=start;j--){
-                cout<<s[j];
-
-            }
-            start=i+1;
-            cout<<" ";
-
+        cin>>arr[i];
+    }
+    int sum=0;
+    for(int i=0;i<n;i++){
+        sum+=arr[i];
+    }
+    int leftsum=0;
+    for(int i=0;i<n;i++){
+        sum-=arr[i];
+        if(leftsum>sum){
+            cout<<i<<endl;
+            return 0;
         }
         
+        leftsum+=arr[i];
     }
+
+    cout<<-1<<endl;
     return 0;
 }
+
+
