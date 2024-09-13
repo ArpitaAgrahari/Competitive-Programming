@@ -35,4 +35,21 @@ int main(){
             }
         }
     }
+    if(firstRowZero){
+        for(int i=0;i<col;i++){
+            matrix[0][i] = 0;
+        }
+    }
+    if(firstColZero){
+        for(int i=0;i<row;i++){
+            matrix[i][0] = 0;
+        }
+    }
+    for(int i=0;i<row;i++){
+        for(int j=0;j<col;j++){
+            cout<<matrix[i][j]<<" ";
+        }
+        cout<<endl;
+    }
+    
 }
