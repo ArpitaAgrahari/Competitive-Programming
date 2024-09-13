@@ -40,10 +40,5 @@ int main(){
             matrix[0][i] = 0;
         }
     }
-    if(firstColZero){
-        for(int i=0;i<row;i++){
-            matrix[i][0] = 0;
-        }
-    }
     
 }
