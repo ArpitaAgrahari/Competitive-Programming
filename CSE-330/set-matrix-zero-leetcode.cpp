@@ -35,10 +35,4 @@ int main(){
             }
         }
     }
-    if(firstRowZero){
-        for(int i=0;i<col;i++){
-            matrix[0][i] = 0;
-        }
-    }
-    
 }
