@@ -2,24 +2,24 @@
 
 #include <iostream>
 using namespace std;
-void check(int curr, int n) {
-    if (curr > n) return;
-    cout << curr << " ";
-    for (int i = 0; i <= 9; ++i) {
-        int next = curr * 10 + i;
-        if (next > n) return;
-        check(next, n);
+void check(int curr,int n) {
+    if(curr>n) return;
+    cout<<curr<< " ";
+    for(int i=0;i<=9;++i) {
+        int next=curr*10+i;
+        if(next>n) return;
+        check(next,n);
     }
 }
 void printorder(int n) {
-    for (int i = 1; i <= 9; ++i) {
-        check(i, n);
+    for (int i=1;i<=9;++i) {
+        check(i,n);
     }
 }
-int main() {
+int main(){
     int n;
-    cout << "Enter a number: ";
-    cin >> n;
+    cout<<"Enter a number: ";
+    cin>>n;
     printorder(n);
     return 0;
 }
