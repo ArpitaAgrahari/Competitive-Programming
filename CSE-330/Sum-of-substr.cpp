@@ -1,0 +1,1 @@
+//Problem statement : given a array print all the sum of the subset genrated from it, in the increasing order.
