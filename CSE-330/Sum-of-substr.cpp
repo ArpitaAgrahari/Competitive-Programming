@@ -5,13 +5,13 @@
 #include <algorithm>
 using namespace std;
 
-void Sums(const vector<int>& arr, int index, int curr, vector<int>& sub) {
-    if (index == arr.size()) {
+void Sums(const vector<int>& arr, int ind, int curr, vector<int>& sub) {
+    if (ind == arr.size()) {
         sub.push_back(curr);
         return;
     }
-    Sums(arr, index + 1, curr + arr[index], sub);
-    Sums(arr, index + 1, curr, sub);
+    Sums(arr,ind+1, curr + arr[ind], sub);
+    Sums(arr,ind+1, curr, sub);
 }
 
 int main() {
