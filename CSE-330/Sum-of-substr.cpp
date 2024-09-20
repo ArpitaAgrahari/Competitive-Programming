@@ -17,15 +17,11 @@ void Sums(const vector<int>& arr, int index, int curr, vector<int>& sub) {
 int main() {
     vector<int> arr = {1, 2, 3};
     vector<int> sub;
-
     Sums(arr, 0, 0, sub);
-
     sort(sub.begin(), sub.end());
-
     for (int sum : sub) {
         cout << sum << " ";
     }
     cout << endl;
-
     return 0;
 }
