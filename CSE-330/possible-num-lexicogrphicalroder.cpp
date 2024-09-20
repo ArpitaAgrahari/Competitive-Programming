@@ -18,7 +18,6 @@ void printorder(int n) {
 }
 int main(){
     int n;
-    cout<<"Enter a number: ";
     cin>>n;
     printorder(n);
     return 0;
