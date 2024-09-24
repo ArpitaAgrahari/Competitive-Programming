@@ -9,6 +9,7 @@ void check(int curr,int n) {
         int next=curr*10+i;
         if(next>n) return;
         check(next,n);
+        
     }
 }
 void printorder(int n) {
