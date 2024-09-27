@@ -1,4 +1,4 @@
-//k-jagged numbers: The number whose smallest prime factor is greater than or equal to the given k, it is called k-rough or k-jagged number.
+//k-jagged numbers or k-rough numbers: The number whose smallest prime factor is greater than or equal to the given k, it is called k-rough or k-jagged number.
 
 //k-jagged numberz:
 #include<iostream>
