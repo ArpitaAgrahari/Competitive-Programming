@@ -22,6 +22,7 @@ int main(){
             mark[j]=1;
         }
     }
+    
     for(int i=2;i<=n;i++){
         if(mark[i]==0){
             cout<<i<<" ";
