@@ -4,22 +4,28 @@
 #include<iostream>
 #include<vector>
 using namespace std;
+
+bool isjagged(int n,int k){
+    for(int i=2;i<=n;i++){
+        if(n%i==0){
+            if(i<k){
+                return false;
+            }else if(i>=k){
+                return true;
+            }
+        }
+        return false;
+    }
+}
 int main(){
     int n;
     cin>>n;
     int k;
     cin>>k;
-    vector<int> vt(n+1,0);
-    for(int i=2;i<=n;i++){
-        if(vt[i]==0){
-            for(int j=i;j<=n;j+=i){
-                if(vt[j]==0) vt[j]=i;
-            }
-        }
-    }
-    for(int i=2;i<=n;i++){
-        if(vt[i]>=5) cout<<i<<" ";
+    if(isjagged(n,k)){
+        cout<<"Yes";
+    }else{
+        cout<<"No";
     }
     return 0;
-
 }
