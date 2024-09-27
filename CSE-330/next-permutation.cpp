@@ -40,3 +40,14 @@ int main(){
 
 //time complexity : O(n)
 //space complexity : O(n)
+//tail recursion : no
+//recursion : no
+//iterative : yes
+//memory complexity : O(n)
+//stable : yes
+//method : next permutation
+//language : C++
+//input : 5 1 2 3 4 5
+//output : 5 1 2 3 5 4
+//url : https://leetcode.com/problems/next-permutation/
+
