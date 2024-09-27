@@ -3,7 +3,7 @@
 #include<iostream>
 using namespace std;
 bool isSmooth(int n,int k){
-    for(int i=n;i<=0;i--){
+    for(int i=n;i<=2;i--){
         if(n%i==0){
             if(i>k){
                 return false;
