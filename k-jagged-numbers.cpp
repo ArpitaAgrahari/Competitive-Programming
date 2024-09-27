@@ -14,8 +14,8 @@ bool isjagged(int n,int k){
                 return true;
             }
         }
-        return false;
     }
+    return false;
 }
 int main(){
     int n;
