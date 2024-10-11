@@ -19,7 +19,7 @@ int knapsack(int n, int w, vector<int> &wt, vector<int> &val) {
 
 int main() {
     int n, w;
-    cout << "Enter the number of items and the maximum weight: ";
+    cout << "Enter weight: ";
     cin >> n >> w;
 
     if (n <= 0 || w <= 0) {
