@@ -23,3 +23,12 @@ int main() {
     cout<<isHappy(n);
     return 0;
 }
+
+
+
+
+
+
+
+
+
