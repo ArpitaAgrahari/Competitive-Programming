@@ -4,21 +4,21 @@ public class loopMaster {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = Integer.parseInt(sc.nextLine());
-        List<String> placementlelo = new ArrayList<>();
+        List<String> place = new ArrayList<>();
         for (int i = 0; i < n; i++) {
-            placementlelo.add(sc.nextLine().trim());
+            place.add(sc.nextLine().trim());
         }
-        processCommands(placementlelo);
+        processCommands(place);
     }
 
-    private static void processCommands(List<String> placementlelo) {
+    private static void processCommands(List<String> place) {
         Stack<Integer> loopCounts = new Stack<>();
         Stack<Integer> currIter = new Stack<>();
         StringBuilder output = new StringBuilder();
         int index = 0;
 
-        while (index < placementlelo.size()) {
-            String command = placementlelo.get(index);
+        while (index < place.size()) {
+            String command = place.get(index);
             if (command.startsWith("for")) {
                 int times = Integer.parseInt(command.split(" ")[1]);
                 loopCounts.push(times);
@@ -31,7 +31,7 @@ public class loopMaster {
                 if (current < max) {
                     loopCounts.push(max);
                     currIter.push(current);
-                    index = findLoopStart(placementlelo, index);
+                    index = findLoopStart(place, index);
                     continue;
                 }
             } else if (command.startsWith("break")) {
@@ -39,7 +39,7 @@ public class loopMaster {
                 if (currIter.peek() + 1 == breakAt) {
                     loopCounts.pop();
                     currIter.pop();
-                    index = findLoopEnd(placementlelo, index);
+                    index = findLoopEnd(place, index);
                 }
             } else if (command.startsWith("continue")) {
                 int continueAt = Integer.parseInt(command.split(" ")[1]);
@@ -48,7 +48,7 @@ public class loopMaster {
                     int current = currIter.pop() + 1;
                     if (current < max) {
                         currIter.push(current);
-                        index = findLoopStart(placementlelo, index);
+                        index = findLoopStart(place, index);
                     }
                     continue;
                 }
@@ -61,12 +61,12 @@ public class loopMaster {
         System.out.print(output.toString());
     }
 
-    private static int findLoopStart(List<String> placementlelo, int ci) {
+    private static int findLoopStart(List<String> place, int ci) {
         int nestedLoops = 0;
         for (int i = ci - 1; i >= 0; i--) {
-            if (placementlelo.get(i).equals("done")) {
+            if (place.get(i).equals("done")) {
                 nestedLoops++;
-            } else if (placementlelo.get(i).equals("do")) {
+            } else if (place.get(i).equals("do")) {
                 if (nestedLoops == 0) {
                     return i;
                 }
@@ -76,18 +76,18 @@ public class loopMaster {
         return 0;
     }
 
-    private static int findLoopEnd(List<String> placementlelo, int ci) {
+    private static int findLoopEnd(List<String> place, int ci) {
         int nestedLoops = 0;
-        for (int i = ci + 1; i < placementlelo.size(); i++) {
-            if (placementlelo.get(i).equals("do")) {
+        for (int i = ci + 1; i < place.size(); i++) {
+            if (place.get(i).equals("do")) {
                 nestedLoops++;
-            } else if (placementlelo.get(i).equals("done")) {
+            } else if (place.get(i).equals("done")) {
                 if (nestedLoops == 0) {
                     return i;
                 }
                 nestedLoops--;
             }
         }
-        return placementlelo.size();
+        return place.size();
     }
 }
