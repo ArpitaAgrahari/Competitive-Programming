@@ -1,6 +1,3 @@
-//insertion on nth pos
-//1,2,3,4,5,--23--,6,7,8,9
-
 #include<iostream>
 using namespace std;
 void insert(int arr[],int *n,int pos,int key){
