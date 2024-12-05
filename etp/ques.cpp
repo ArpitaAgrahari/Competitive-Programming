@@ -18,7 +18,6 @@ int LCS(string str1, string str2) {
     }
     return dp[n][m];
 }
-
 int main() {
     string str1, str2;
     cin >> str1;
