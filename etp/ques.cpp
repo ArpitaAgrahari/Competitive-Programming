@@ -2,7 +2,6 @@
 #include <vector>
 #include <string>
 using namespace std;
-
 int LCS(string str1, string str2) {
     int n = str1.size();
     int m = str2.size();
