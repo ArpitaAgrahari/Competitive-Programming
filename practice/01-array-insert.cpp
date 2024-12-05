@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-void insert(int arr[],int *n,int pos,int key){
+void insert(int arr[],int *n,int pos, int key){
     (*n)++;
     for(int i=(*n-1);i>=pos;i--){
         arr[i] = arr[i-1];
