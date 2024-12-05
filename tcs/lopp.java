@@ -75,7 +75,7 @@ public class loopMaster {
         }
         return 0;
     }
-
+    
     private static int findLoopEnd(List<String> place, int ci) {
         int nestedLoops = 0;
         for (int i = ci + 1; i < place.size(); i++) {
