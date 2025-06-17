@@ -209,3 +209,21 @@ int main_reversewords()
     cout << endl;
     return 0;
 }
+
+// 10. given if else conditon print O/P : YES NO
+// strcicly follow if else
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    if (cout << "YES\n")
+    {
+        cout << "NO" << endl;
+    }
+    else
+    {
+        cout << "NO" << endl;
+    }
+}
