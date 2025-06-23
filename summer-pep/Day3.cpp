@@ -90,3 +90,36 @@ int main()
     }
     cout << maxi << endl;
 }
+
+// Next greater element''''''
+#include <bits/stdc++.h>
+using namespace std;
+
+vector<int> nextGreaterElements(vector<int> &arr)
+{
+    int n = arr.size();
+    vector<int> res(n, -1);
+    stack<int> st;
+
+    for (int i = 0; i < n; i++)
+    {
+        while (!st.empty() && arr[i] > arr[st.top()])
+        {
+            res[st.top()] = arr[i];
+            st.pop();
+        }
+        st.push(i);
+    }
+
+    return res;
+}
+
+int main()
+{
+    vector<int> arr = {4, 5, 2, 10, 8};
+    vector<int> result = nextGreaterElements(arr);
+
+    for (int val : result)
+        cout << val << " ";
+    return 0;
+}
