@@ -19,14 +19,50 @@ int maximumsubarray(int arr[], int n, int k)
 }
 int main()
 {
-    int n;
-    cin >> n;
+    int n, k;
+    cin >> n >> k;
     int arr[n];
     for (int i = 0; i < n; i++)
     {
         cin >> arr[i];
     }
     cout << maximumsubarray(arr, n);
+}
+
+// optimized
+#include <bits/stdc++.h>
+using namespace std;
+
+int maximumSubarrayLessThanK(int arr[], int n, int k)
+{
+    set<int> prefixSums;
+    prefixSums.insert(0);
+    int currSum = 0;
+    int maxSum = INT_MIN;
+
+    for (int i = 0; i < n; i++)
+    {
+        currSum += arr[i];
+        auto it = prefixSums.lower_bound(currSum - k + 1);
+        if (it != prefixSums.end())
+        {
+            maxSum = max(maxSum, currSum - *it);
+        }
+        prefixSums.insert(currSum);
+    }
+    return (maxSum == INT_MIN) ? -1 : maxSum;
+}
+
+int main()
+{
+    int n, k;
+    cin >> n >> k;
+    int arr[n];
+    for (int i = 0; i < n; i++)
+        cin >> arr[i];
+
+    cout << maximumSubarrayLessThanK(arr, n, k);
+    return 0;
 }
 
 // 2. kadane algo
