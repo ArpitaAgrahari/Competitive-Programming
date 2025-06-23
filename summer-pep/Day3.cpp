@@ -26,7 +26,7 @@ int main()
     {
         cin >> arr[i];
     }
-    cout << maximumsubarray(arr, n);
+    cout << maximumsubarray(arr, n, k);
 }
 
 // optimized
