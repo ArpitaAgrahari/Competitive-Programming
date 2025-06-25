@@ -46,3 +46,5 @@ int main()
         cout << cnt << endl;
     }
 }
+
+// ACTIVTY SELECTION
